@@ -52,7 +52,7 @@ class _PokemonListPageState extends State<PokemonListPage> {
                 var pokemon = snapshot.data![index];
                 return ListTile(
                   title: Text(pokemon.name),
-                  // leading: Image.network(pokemon.imageUrl),
+                  leading: Image.network(pokemon.image),
                 );
               },
             );
