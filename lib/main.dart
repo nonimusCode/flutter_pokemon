@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'pokemon.dart';
 import 'package:poke_api_flutter/services/api_service.dart';
 
 void main() => runApp(MyApp());
@@ -53,7 +52,7 @@ class _PokemonListPageState extends State<PokemonListPage> {
                 var pokemon = snapshot.data![index];
                 return ListTile(
                   title: Text(pokemon.name),
-                  leading: Image.network(pokemon.imageUrl),
+                  // leading: Image.network(pokemon.imageUrl),
                 );
               },
             );
